@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="fetchBtn">
+        AJAX
+    </button>
+    <script>
+let fetchBtn = document.getElementById('fetchBtn');
+fetchBtn.addEventListener('click', buttonClickHandler)
+
+function buttonClickHandler(){
+    // console.log('hey');
+    const xhr = new XMLHttpRequest();
+
+    xhr.open('GET', 'demo.txt' , true);
+    xhr.onload = function(){
+        console.log(this.responseText);
+       
+    }
+    xhr.send();
+}
+    </script>
+</body>
+</html>

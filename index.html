@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+
+        }
+        form{
+            width: 50%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>JS Tutorial</h1>
+    <form action="" id="registerFrom" onsubmit= "return false">
+        <div>
+            <input type= "text" id = "firstName" placeholder="Enter First Name">
+            <p id ="fnameError"></p>
+        </div>
+        <div>
+            <input type= "text" id = "lastName" placeholder="Enter Last Name">
+            <p id ="lnameError"></p>
+        </div>
+        <div>
+            <input type= "email" id = "email" placeholder="Enter your email">
+            <p id ="emailError"></p>
+        </div>
+        <div>
+            <input type= "password" id = "password" placeholder="Enter your password">
+            <p id ="passwordError"></p>
+        </div>
+        <button onclick = "submitForm()">Submit</button>
+    </form>
+    <script src ="script.js"></script>
+</body>
+</html>
